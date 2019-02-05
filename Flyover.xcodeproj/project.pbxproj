@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4537CCE06195327226BAF99A /* Pods_Flyover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9BE46DFAC8A82459A4A588 /* Pods_Flyover.framework */; };
 		6ADF48C42209173200AA929E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADF48C32209173200AA929E /* AppDelegate.swift */; };
 		6ADF48C62209173200AA929E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADF48C52209173200AA929E /* ViewController.swift */; };
 		6ADF48C92209173200AA929E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ADF48C72209173200AA929E /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49D051B7853E567A8A033224 /* Pods-Flyover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flyover.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flyover/Pods-Flyover.release.xcconfig"; sourceTree = "<group>"; };
 		6ADF48C02209173200AA929E /* Flyover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flyover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ADF48C32209173200AA929E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6ADF48C52209173200AA929E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		6ADF48CD2209173300AA929E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6ADF48D02209173300AA929E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6ADF48D22209173300AA929E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAF18CEC16DC3C04E1094E2E /* Pods-Flyover.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flyover.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flyover/Pods-Flyover.debug.xcconfig"; sourceTree = "<group>"; };
+		DD9BE46DFAC8A82459A4A588 /* Pods_Flyover.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flyover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4537CCE06195327226BAF99A /* Pods_Flyover.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				6ADF48C22209173200AA929E /* Flyover */,
 				6ADF48C12209173200AA929E /* Products */,
+				F784B2E6E02B0303645093AE /* Pods */,
+				E62331A183C771EA532CB0CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = Flyover;
 			sourceTree = "<group>";
 		};
+		E62331A183C771EA532CB0CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD9BE46DFAC8A82459A4A588 /* Pods_Flyover.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F784B2E6E02B0303645093AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BAF18CEC16DC3C04E1094E2E /* Pods-Flyover.debug.xcconfig */,
+				49D051B7853E567A8A033224 /* Pods-Flyover.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6ADF48D52209173300AA929E /* Build configuration list for PBXNativeTarget "Flyover" */;
 			buildPhases = (
+				9741A0F6655BA87F4B665E75 /* [CP] Check Pods Manifest.lock */,
 				6ADF48BC2209173200AA929E /* Sources */,
 				6ADF48BD2209173200AA929E /* Frameworks */,
 				6ADF48BE2209173200AA929E /* Resources */,
+				F140E4912260B12FB2BA7900 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9741A0F6655BA87F4B665E75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flyover-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F140E4912260B12FB2BA7900 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Flyover/Pods-Flyover-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FlyoverKit/FlyoverKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlyoverKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flyover/Pods-Flyover-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6ADF48BC2209173200AA929E /* Sources */ = {
@@ -284,6 +357,7 @@
 		};
 		6ADF48D62209173300AA929E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAF18CEC16DC3C04E1094E2E /* Pods-Flyover.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +376,7 @@
 		};
 		6ADF48D72209173300AA929E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49D051B7853E567A8A033224 /* Pods-Flyover.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
